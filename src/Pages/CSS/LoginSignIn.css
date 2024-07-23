@@ -1,0 +1,120 @@
+.loginsignin{
+    width: 100%;
+    height: 80vh;
+    background: #fce3fe;
+    padding-top: 100px;
+}
+
+.loginsignin-container{
+   width: 580px; 
+   height: 600px;
+   background: white;
+   margin: auto;
+   padding: 40px 60px;
+}
+
+.loginsignin-container h1{
+   margin: 20px 0px; 
+}
+
+.loginsignin-fields{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.loginsignin-fields input{
+    height: 72px;
+    width: 100%;
+    padding-left: 20px;
+    border: 1px solid #c9c9c9;
+    outline: none;
+    color: #5c5c5c;
+    font-size: 18px;
+}
+
+.loginsignin-container button{
+    width: 580px;
+    height: 72px;
+    color: white;
+    background: #ff4141;
+    margin-top: 30px;
+    border: none;
+    font-size: 24px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.loginsignin-login{
+    margin-top: 20px;
+    color: #5c5c5c;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.loginsignin-login span{
+    color: #ff4141;
+    font-weight: 600;
+}
+
+.loginsignin-agree{
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
+    gap: 20px;
+    color: #5c5c5c;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+@media(max-width:1280px){
+    .loginsignin{
+        padding-top: 50px;
+    }
+    .loginsignin-container{
+        width: auto;
+        max-width: 500px;
+        max-height: 500px;
+    }
+    .loginsignin-container h1{
+        margin: 10px 0px;
+    }
+    .loginsignin-fields{
+        gap: 20px;
+        margin-top: 20px;
+    }
+    .loginsignin-fields input{
+        height: 65px;
+        width: 93%;
+    }
+    .loginsignin-container button{
+        width: 100%;
+    }
+    .loginsignin-login{
+        font-size: 16px;
+    }
+    .loginsignin-agree{
+        font-size: 14px;
+        gap: 10px;
+    }
+}
+
+@media(max-width:800px){
+    .loginsignin-container{
+        padding: 20px 30px;
+    }
+    .loginsignin-container h1{
+        font-size: 24px;
+    }
+    .loginsignin-fields{
+        margin-top: 20px;
+    }
+    .loginsignin-fields input{
+        height: 50px;
+    }
+    .loginsignin-container button{
+        height: 50px;
+        font-size: 16px;
+    }
+}
