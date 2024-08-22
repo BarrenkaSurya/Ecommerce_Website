@@ -5,8 +5,13 @@ import { useAuth } from '../AuthContext';
 const ProtectedRoute = ({ element: Element, ...rest }) => {
   const { isAuthenticated } = useAuth();
 
-  return isAuthenticated() ? <Element {...rest} /> : <Navigate to="/signin" />;
+  return isAuthenticated() ? (
+    <Element {...rest} />
+  ) : (
+    <Navigate to="/signin" replace />
+  );
 };
 
 export default ProtectedRoute;
+
 
